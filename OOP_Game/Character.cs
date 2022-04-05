@@ -28,7 +28,7 @@ namespace OOP_Game
             shield -= damage;
             if(shield < 0)
             {
-                health -= shield;
+                health -= damage;
                 shield = 0;
             }
             
@@ -39,7 +39,7 @@ namespace OOP_Game
         }
         public override string ToString()
         {
-            string text = "Name:" + "\n";
+            string text = "Name:" + Name + "\n";
             text += "Health:" + health + "\n";
             text += "Shield:" + shield + "\n";
             text += "Damage:" + damage + "\n";
